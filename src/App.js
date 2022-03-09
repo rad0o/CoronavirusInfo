@@ -2,6 +2,7 @@ import './App.css';
 import { getCountries } from './CoronaAPI'
 import { useEffect, useState } from "react"
 import CountryList from './CountryList';
+import CountryInfoContainer from './CountryInfoContainer';
 
 function App() {
   const [countries, setCountries] = useState([]);
@@ -21,6 +22,7 @@ function App() {
   return (
     <div className="App">
       <CountryList />
+      <CountryInfoContainer />
     </div>
   );
 }

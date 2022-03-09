@@ -1,9 +1,12 @@
 import './CountryList.css';
 import { getCountries } from './CoronaAPI';
-import { useDebugValue, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
+import CountryButton from './CountryButton';
+import SearchField from './SearchField'
 
 function CountryList() {
     const [countries, setCountries] = useState([]);
+    const [query, setQuery] = useState("");
 
     useEffect(() => {
         const fetchData = async () => {
@@ -17,8 +20,16 @@ function CountryList() {
 
     return (
         <div className="CountryList">
+            <SearchField setQuery={setQuery} />
             {
-                countries.map(country => <h3>{country.name} - {country.letter3}</h3>)
+                countries.filter(country => {
+                    if (query === ""){
+                        return country;
+                    } else if(country.name.toLowerCase().includes(query.toLowerCase())){
+                        return country;
+                    }
+                })
+                    .map((country, index) => <CountryButton countryName={country.name} />)
             }
         </div>
     )

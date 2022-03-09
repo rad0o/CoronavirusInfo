@@ -1,0 +1,26 @@
+.CountryList {
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    border-radius: 10px;
+    padding: 5px;
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 100%;
+    margin: 5px;
+    min-width: fit-content;
+}
+
+.CountryList::-webkit-scrollbar{
+    width: 5px;
+}
+
+.CountryList::-webkit-scrollbar-thumb{
+    background-color:transparent;
+    border-radius: 50vh;
+    background-color: rgba(0, 0, 0, 0.226);
+}
+
+.CountryList::-webkit-scrollbar-track{
+    margin: 10px;
+}
