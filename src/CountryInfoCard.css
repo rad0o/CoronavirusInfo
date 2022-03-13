@@ -1,0 +1,36 @@
+.CountryInfoCard {
+    box-shadow: 5px 5px 10px 0 rgb(184, 184, 184);
+    background-color: #f9f9f9;
+    margin: 10px;
+    border-radius: 25px;
+    padding: 10px;
+    display: flex;
+    flex-flow: column;
+}
+
+.CountryStrings {
+    font-family: 'Roboto', 'Arial', sans-serif;
+}
+
+#CountryName {
+    margin: 10px;
+    color: rgb(0, 0, 0);
+}
+
+#InfoList {
+    font-size: 1.3em;
+}
+
+#info {
+    color: aliceblue;
+    width: 50%;
+}
+
+#list_item {
+    display: flex;
+}
+
+#flag {
+    width: 400px;
+    justify-self: flex-end;
+}

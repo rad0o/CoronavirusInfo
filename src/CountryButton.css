@@ -1,11 +1,29 @@
 .CountryButton {
     padding: 10px;
-    margin: 1px;
-    border-radius: 10px;
-    background-color: rgb(161, 235, 86);
+    margin: 3px;
+    border-radius: 100px;
+    background-color: #f9f9f9;
     border: none;
+    line-height: 15px;
+    box-shadow: 2px 2px 2px 0 rgb(184, 184, 184);
+    min-width: 250px;
+    min-height: 40px;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+
+    will-change: transform, background-color, box-shadow, position;
+    transition: transform 250ms, background-color 250ms, box-shadow 250ms, position 250ms;
 }
 
 .CountryButton:hover{
-    background-color: green;
+    background-color: rgb(235, 235, 235);
+    box-shadow: 3px 3px 2px 0 rgb(184, 184, 184);
+    transform: translate(-1px -1px);
+}
+
+#CountryButtonSelected{
+    background-color: #d3d3d3;
+    transform: translate(-2px, -2px);
+    box-shadow: 4px 4px 2px 0 rgb(184, 184, 184);
 }

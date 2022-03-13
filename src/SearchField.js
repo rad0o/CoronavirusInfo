@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import './SearchField.css'
 
 function SearchField(props) {
@@ -7,7 +6,7 @@ function SearchField(props) {
     }
 
     return (
-        <input className="SearchField" placeholder="Search country..." onChange={onChange}/>
+        <input className="SearchField" placeholder="Search country..." onChange={onChange} autoComplete="none"/>
     );
 }
 

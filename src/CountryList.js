@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import CountryButton from './CountryButton';
 import SearchField from './SearchField'
 
-function CountryList() {
+function CountryList(props) {
     const [countries, setCountries] = useState([]);
     const [query, setQuery] = useState("");
 
@@ -22,14 +22,8 @@ function CountryList() {
         <div className="CountryList">
             <SearchField setQuery={setQuery} />
             {
-                countries.filter(country => {
-                    if (query === ""){
-                        return country;
-                    } else if(country.name.toLowerCase().includes(query.toLowerCase())){
-                        return country;
-                    }
-                })
-                    .map((country, index) => <CountryButton countryName={country.name} />)
+                countries.filter(country => query === "" || country.name.toLowerCase().includes(query.toLowerCase()))
+                    .map((country, index) => <CountryButton key={index} country={country} setSelectedCountry={props.setSelectedCountry} selected={props.selectedCountry.name === country.name ? true : false} />)
             }
         </div>
     )

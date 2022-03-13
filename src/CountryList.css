@@ -1,13 +1,13 @@
 .CountryList {
+    box-shadow: 5px 5px 10px 0 rgb(184, 184, 184);
     display: flex;
     flex-direction: column;
-    background-color: aqua;
-    border-radius: 10px;
+    background-color: #eaeaea;
+    border-radius: 25px;
     padding: 5px;
     overflow: scroll;
     overflow-x: hidden;
-    height: 100%;
-    margin: 5px;
+    margin: 14px 7px 14px 14px;
     min-width: fit-content;
 }
 
@@ -22,5 +22,5 @@
 }
 
 .CountryList::-webkit-scrollbar-track{
-    margin: 10px;
+    margin: 30px;
 }

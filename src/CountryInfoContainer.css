@@ -1,9 +1,8 @@
 .CountryInfoContainer {
-    background-color: aqua;
-    border-radius: 10px;
-    padding: 5px;
-    height: 100%;
+    box-shadow: 5px 5px 10px 0 rgb(184, 184, 184);
     width: 100%;
-    margin: 5px;
-    text-align: center;
+    background-color: #eaeaea;
+    border-radius: 25px;
+    padding: 5px;
+    margin: 14px;
 }

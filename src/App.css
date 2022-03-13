@@ -1,10 +1,12 @@
 .App {
+  width: 70vw;
+  height: 90vh;
+  margin: 5vh 0;
+  background-color: #ffffff;
+  box-shadow: 10px 10px 10px 0 rgb(184, 184, 184);
+  border-radius: 25px 25px 25px 25px;
+  min-width: 500px;
+  min-height: 500px;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  height: 96vh;
-  padding: 10px;
-  margin: 1vh;
-  align-self: center;
-  justify-content: space-between;
 }

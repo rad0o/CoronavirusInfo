@@ -1,10 +1,13 @@
 import './CountryButton.css'
-import { useEffect, useState } from 'react'
 
 function CountryButton(props) {
+    const onClick = () => {
+        props.setSelectedCountry(props.country);
+    }
+
     return (
-        <button className='CountryButton'>
-            {props.countryName}
+        <button id={props.selected ? 'CountryButtonSelected' : ''} className='CountryButton' onClick={onClick}>
+            {props.country.name}
         </button>
     )
 }

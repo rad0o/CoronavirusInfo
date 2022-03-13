@@ -1,7 +1,13 @@
 .SearchField {
     padding: 10px;
-    margin: 1px;
-    border-radius: 10px;
-    background-color: rgb(128, 231, 128);
+    margin: 3px;
+    border-radius: 100px;
+    background-color: #f9f9f9;
     border: none;
+    line-height: 15px;
+    box-shadow: 2px 2px 2px 0 rgb(184, 184, 184);
+    min-width: 250px;
+    min-height:20px;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 14px;
 }
