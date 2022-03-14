@@ -1,5 +1,5 @@
 import './CountryList.css';
-import { getCountries } from './CoronaAPI';
+import { getCountries } from '../APIServices/CoronaAPI';
 import { useEffect, useState } from 'react';
 import CountryButton from './CountryButton';
 import SearchField from './SearchField'

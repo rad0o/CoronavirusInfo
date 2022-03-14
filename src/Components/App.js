@@ -1,5 +1,5 @@
 import './App.css';
-import { Country } from './CoronaAPI'
+import { Country } from '../APIServices/CoronaAPI'
 import { useState } from "react"
 import CountryList from './CountryList';
 import CountryInfoContainer from './CountryInfoContainer';

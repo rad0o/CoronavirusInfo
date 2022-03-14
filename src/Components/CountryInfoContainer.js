@@ -1,7 +1,7 @@
 import './CountryInfoContainer.css'
 import CountryInfoCard from './CountryInfoCard'
 import { useEffect, useState } from "react"
-import { getCountryInfo } from './CoronaAPI'
+import { getCountryInfo } from '../APIServices/CoronaAPI'
 
 function CountryInfoContainer(props) {
     const [countryInfo, setCountryInfo] = useState({});

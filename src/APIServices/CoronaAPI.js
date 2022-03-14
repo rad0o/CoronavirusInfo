@@ -1,4 +1,3 @@
-
 var axios = require("axios").default;
 
 class Country {
@@ -13,7 +12,6 @@ class Country {
         this.letter3 = letter3;
     }
 }
-
 
 function getCountries() {
     /// returns a list of available countries

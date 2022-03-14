@@ -23,6 +23,7 @@
 }
 
 #CountryButtonSelected{
+    color: black;
     background-color: #d3d3d3;
     transform: translate(-2px, -2px);
     box-shadow: 4px 4px 2px 0 rgb(184, 184, 184);
