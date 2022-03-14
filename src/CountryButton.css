@@ -2,23 +2,23 @@
     padding: 10px;
     margin: 3px;
     border-radius: 100px;
-    background-color: #f9f9f9;
+    background-color: #ffffff;
     border: none;
     line-height: 15px;
-    box-shadow: 2px 2px 2px 0 rgb(184, 184, 184);
+    box-shadow: 2px 2px 2px 0 rgb(184, 184, 184), inset 0 0 20px 1px #e9e9e9c7;
     min-width: 250px;
     min-height: 40px;
     font-family: 'Roboto', 'Arial', sans-serif;
+    color: rgb(98, 98, 98);
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 500;
 
     will-change: transform, background-color, box-shadow, position;
     transition: transform 250ms, background-color 250ms, box-shadow 250ms, position 250ms;
 }
 
 .CountryButton:hover{
-    background-color: rgb(235, 235, 235);
-    box-shadow: 3px 3px 2px 0 rgb(184, 184, 184);
+    box-shadow: 2px 2px 2px 0 rgb(184, 184, 184), inset 0 0 30px 1px #c2c2c2c7;
     transform: translate(-1px -1px);
 }
 

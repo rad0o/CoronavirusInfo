@@ -5,4 +5,20 @@
     border-radius: 25px;
     padding: 5px;
     margin: 14px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.CountryInfoContainer::-webkit-scrollbar{
+    width: 5px;
+}
+
+.CountryInfoContainer::-webkit-scrollbar-thumb{
+    background-color:transparent;
+    border-radius: 50vh;
+    background-color: rgba(0, 0, 0, 0.226);
+}
+
+.CountryInfoContainer::-webkit-scrollbar-track{
+    margin: 30px;
 }
